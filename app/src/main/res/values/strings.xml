@@ -19,4 +19,7 @@
     <string name="desc_text">What schedule will be planned?</string>
     <string name="date">Date</string>
     <string name="add_new_schedule">Add new schedule</string>
+    <string name="new_schedule">New Schedule</string>
+    <string name="create">Create</string>
+    <string name="create">Create</string>
 </resources>
