@@ -21,7 +21,7 @@
         android:id="@+id/cv"
         android:layout_margin="50dp"
         app:contentPadding="10dp"
-        app:cardElevation="15dp"
+        app:cardElevation="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -88,7 +88,7 @@
                     android:layout_height="wrap_content" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/mb_forgot"
+                    android:id="@+id/btn_forgot"
                     android:text="@string/forgot_pss"
                     style="@style/Widget.Material3.Button.TextButton"
                     android:textSize="10dp"
@@ -97,7 +97,7 @@
             </LinearLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/mb_login"
+                android:id="@+id/btn_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="24dp"
@@ -120,8 +120,8 @@
         android:layout_height="75dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/mb_register"
-        android:text="@string/bpa"
+        android:id="@+id/btn_register_text"
+        android:text="@string/add_account"
         style="@style/Widget.Material3.Button.TextButton"
         app:layout_constraintTop_toBottomOf="@id/cv"
         app:layout_constraintStart_toStartOf="parent"
