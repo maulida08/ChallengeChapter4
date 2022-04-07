@@ -5,8 +5,7 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="belum_punya_akun">Belum punya akun?</string>
-    <string name="bpa">Belum punya akun?</string>
+    <string name="add_account">Don\'t have an account yet?</string>
     <string name="register">Register</string>
     <string name="email">Email</string>
     <string name="confirm_password">Confirm Password</string>
@@ -15,5 +14,9 @@
     <string name="empty">Empty</string>
     <string name="logout">Logout</string>
     <string name="hallo">Hallo, Username!</string>
-    <string name="empty_text">Is in empty</string>
+    <string name="empty_text">Is in empty, \n click + to add schedule</string>
+    <string name="title">Title</string>
+    <string name="desc_text">What schedule will be planned?</string>
+    <string name="date">Date</string>
+    <string name="add_new_schedule">Add new schedule</string>
 </resources>
