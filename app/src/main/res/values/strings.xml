@@ -12,4 +12,8 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="forgot_pss">Forgot Password?</string>
     <string name="remember_me">Remember me</string>
+    <string name="empty">Empty</string>
+    <string name="logout">Logout</string>
+    <string name="hallo">Hallo, Username!</string>
+    <string name="empty_text">Is in empty</string>
 </resources>
