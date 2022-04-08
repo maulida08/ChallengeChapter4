@@ -16,6 +16,10 @@
         <action
             android:id="@+id/action_loginFragment_to_homeFragment2"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"

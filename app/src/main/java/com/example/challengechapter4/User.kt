@@ -5,17 +5,17 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Schedule(
+data class User(
     @PrimaryKey(autoGenerate = true)
     val id: Int?,
 
-    @ColumnInfo(name = "judul")
-    val judul: String,
+    @ColumnInfo(name = "username")
+    val username: String,
 
-    @ColumnInfo(name = "date")
-    var date: String,
+    @ColumnInfo(name = "email")
+    var email: String,
 
-    @ColumnInfo(name = "desc")
-    val desc: String,
-)
+    @ColumnInfo(name = "pass")
+    val pass: String,
 
+    )

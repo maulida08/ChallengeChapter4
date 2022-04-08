@@ -9,8 +9,12 @@ import com.example.challengechapter4.databinding.ItemScheduleBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 
-class ScheduleAdapter(private val listStudent: List<Schedule>) :
-    RecyclerView.Adapter<ScheduleAdapter.ViewHolder>() {
+class ScheduleAdapter(
+    private val listStudent: List<Schedule>,
+    private val detail: (Schedule)->Unit,
+    private val delete: (Schedule)->Unit,
+    private val update: (Schedule)->Unit
+    ) : RecyclerView.Adapter<ScheduleAdapter.ViewHolder>() {
 
     class ViewHolder (val binding: ItemScheduleBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -19,7 +23,7 @@ class ScheduleAdapter(private val listStudent: List<Schedule>) :
     }
 
     override fun onBindViewHolder(holder: ScheduleAdapter.ViewHolder, position: Int) {
-        holder.binding.tvTitle.text = listStudent[position].id.toString()
+        holder.binding.tvTitle.text = listStudent[position].judul
         holder.binding.tvDate.text = listStudent[position].date
         holder.binding.tvDesc.text = listStudent[position].desc
     }
