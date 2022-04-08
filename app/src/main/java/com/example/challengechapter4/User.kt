@@ -18,4 +18,8 @@ data class User(
     @ColumnInfo(name = "pass")
     val pass: String,
 
+    @ColumnInfo(name = "confir pass")
+    val confirPass: String,
+
+
     )

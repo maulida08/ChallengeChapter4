@@ -26,7 +26,7 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+        _binding = FragmentLoginBinding.inflate(inflater,container,false)
         return binding.root
     }
 
@@ -34,7 +34,10 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         scheduleDatabase = ScheduleDatabase.getInstance(requireContext())
 
-        binding.btnLogin.setOnClickListener {
+        binding.btnRegisterText.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+        }
+        binding.btnLogin.setOnClickListener{
             lifecycleScope.launch(Dispatchers.IO){
                 val login = scheduleDatabase?.scheduleDao()?.login(binding.etUsername.text.toString(), binding.etPassword.text.toString())
                 runBlocking(Dispatchers.Main){

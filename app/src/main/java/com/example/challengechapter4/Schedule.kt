@@ -7,15 +7,15 @@ import androidx.room.PrimaryKey
 @Entity
 data class Schedule(
     @PrimaryKey(autoGenerate = true)
-    val id: Int?,
+    var id: Int?,
 
     @ColumnInfo(name = "judul")
-    val judul: String,
+    var judul: String,
 
     @ColumnInfo(name = "date")
     var date: String,
 
     @ColumnInfo(name = "desc")
-    val desc: String,
+    var desc: String,
 )
 
